@@ -22,9 +22,9 @@
     </head>
     <body class="antialiased">
         <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-            <h5 class="my-0 mr-md-auto font-weight-normal">Company</h5>
+            <h5 class="my-0 mr-md-auto font-weight-normal">Catagory</h5>
             <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="#">Companies</a>
+                <a class="p-2 text-dark" href="Companies">Companies</a>
                 <a class="p-2 text-dark" href="trainers">Trainer</a>
                 <a class="p-2 text-dark" href="search">Search</a>
 
@@ -42,28 +42,22 @@
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Web</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Code</th>
-                        <th scope="col">Phone</th>
+
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($companies as $item):
+                    @foreach($catagory as $item):
                     <tr>
-                        <th scope="row"><?php echo $item->company_id ?></th>
-                        <td><?php echo $item->company_name ?></td>
-                        <td><?php echo $item->company_web ?></td>
-                        <td><?php echo $item->company_address ?></td>
-                        <td><?php echo $item->company_code ?></td>
-                        <td><?php echo $item->company_phone ?></td>
+                        <th scope="row"><?php echo $item->catagory_id ?></th>
+                        <td><?php echo $item->catagory_name ?></td>
+
 
                     </tr>
                     @endforeach
                 </tbody>
             </table>
 
-            {{ $companies->links()}}
+            {{ $catagory->links()}}
 
         </div>
 

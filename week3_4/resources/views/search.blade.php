@@ -26,6 +26,7 @@
             <nav class="my-2 my-md-0 mr-md-3">
                 <a class="p-2 text-dark" href="companies">Companies</a>
                 <a class="p-2 text-dark" href="trainers">Trainer</a>
+                <a class="p-2 text-dark" href="catagory">Catagory</a>
            <form class="form-inline mt-2 mt-md-0">
                 <input name="data" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

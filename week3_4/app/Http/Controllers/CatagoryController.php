@@ -8,13 +8,13 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 
-use App\Models\Trainers;
-class TrainersController extends Controller
+use App\Models\Catagory;
+class CatagoryController extends Controller
 {
-    public function trainers() {
-        $obj = new Trainers();
-        $trainers = $obj->all();
-        $trainers = $obj->paginate(10);
-        return view('trainers', ['trainers' => $trainers]);
+    public function catagory() {
+        $obj = new Catagory();
+        $catagory = $obj->all();
+        $catagory = $obj->paginate(10);
+        return view('catagory', ['catagory' => $catagory]);
     }
 }

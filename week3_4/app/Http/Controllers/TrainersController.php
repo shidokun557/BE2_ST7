@@ -9,6 +9,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 
 use App\Models\Trainers;
+
 class TrainersController extends Controller
 {
     public function trainers() {

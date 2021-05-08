@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
         // Gọi hàm companiesSeeding đã tạo ở Seeder
         $this->call(trainersSeender::class);
         //Tương tự như trên
+        $this->call(catagorySeeder::class);
+
     }
 }
