@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,10 +28,18 @@
                 <a class="p-2 text-dark" href="companies">Companies</a>
                 <a class="p-2 text-dark" href="trainers">Trainer</a>
                 <a class="p-2 text-dark" href="catagory">Catagory</a>
-           <form class="form-inline mt-2 mt-md-0">
-                <input name="data" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input name="data" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+                    <form action="/checkbox-example" method="POST">
+
+                        <input type="text" name="name"/><br/><br/>
+                        <input type="checkbox" name="terms">
+                        <label>Catagory</label><br/><br/>
+                    </form>
+
+                </form>
 
             </nav>
 
@@ -65,7 +74,7 @@
                     @endforeach
                 </tbody>
             </table>
-            
+
             {{ $trainers->links()}}
 
         </div>
