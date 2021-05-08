@@ -10,5 +10,7 @@ class SearchController extends Controller
         $obj = new Trainers();
         $trainers = $obj->search($name);
         return view('search', ['trainers' => $trainers]);
+        
     }
+    
 }
