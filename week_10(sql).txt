@@ -1,0 +1,56 @@
+a)
+SELECT * FROM teacher
+
+b)
+SELECT * FROM student
+
+c) 
+SELECT * FROM courses
+
+d) 
+SELECT * FROM teachers join courses on teachers.courses_id = courses.courses_id WHERE teachers.teacher_name = "Nguyễn Văn A"
+
+e)
+SELECT teacher.user_name, student
+FROM teacher JOIN student ON teacher.user_name = student
+WHERE user_name = 'Nguyen Van A'
+
+f)
+
+
+g)
+ SELECT * FROM internship_diary JOIN students ON internship_diary.user_id = students.user_id 
+JOIN user ON students.user_id = user.user_id WHERE user.user_name = Nguyen Van A
+
+h)
+
+
+i)
+SELECT  weeks.teacher_comment
+FROM internship_diary
+JOIN student
+ON student.user_id = internship_diary.user_id
+JOIN user
+ON student.user_id = user.id
+JOIN weeks
+ON weeks.internship_diary_id = internship_diary.id
+WHERE user.user_name = 'Nguyễn Văn B' 
+AND internship_diary.internship_year = '2020-2021 Học kỳ 1';
+
+j)
+SELECT  weeks.trainer_comment
+FROM internship_diary
+JOIN student
+ON student.user_id = internship_diary.user_id
+JOIN user
+ON student.user_id = user.id
+JOIN weeks
+ON weeks.internship_diary_id = internship_diary.id
+WHERE user.user_name = 'Nguyễn Văn B' 
+AND internship_diary.internship_year = '2020-2021 Học kỳ 1';
+
+
+
+
+
+
