@@ -23,7 +23,13 @@ JOIN student
 ON teacher.user_name = student
 WHERE user_name = 'Nguyen Van A';//câu e 
 
-//thiếu câu f
+// f
+SELECT * FROM companies
+JOIN students ON companies.company_id = students.company_id
+JOIN classes ON students.class_id = classes.class_id
+JOIN teachers ON classes.teacher_id = teachers.teacher_id
+JOIN courses ON courses.course_id = classes.course_id
+WHERE teachers.teacher_name = 'Nguyen Van A' AND courses.course_year = '2020-2021' AND courses.course_semester = 'Hoc ky 1';
 
 SELECT  *
 FROM internship_diary
